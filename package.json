@@ -1,0 +1,26 @@
+{
+  "name": "classy-router",
+  "version": "1.0.0",
+  "description": "Class based HTTP routing",
+  "main": "index.js",
+  "author": "mklabs",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklabs/classy-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mklabs/classy-router/issues"
+  },
+  "homepage": "https://github.com/mklabs/classy-router#readme",
+  "dependencies": {
+    "path-to-regexp": "^1.2.1"
+  }
+}

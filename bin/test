@@ -1,0 +1,20 @@
+#! /usr/bin/env node
+
+
+var Router = require('..');
+
+class App extends Router {
+  get routes() {
+    return {
+      '/': 'index'
+    }
+  }
+
+  index(req, res) {
+    return res.end('OK');
+  }
+}
+
+
+var router = new App();
+router.listen(3000);
