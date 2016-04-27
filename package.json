@@ -2,12 +2,12 @@
   "name": "classy-router",
   "version": "0.0.1",
   "description": "Class based HTTP routing",
-  "main": "lib",
+  "main": "src",
   "author": "mklabs",
   "license": "MIT",
   "homepage": "https://github.com/mklabs/classy-router#readme",
   "scripts": {
-    "test": "npm run babel && mocha test",
+    "test": "npm run babel && babel-node ./node_modules/.bin/mocha test",
     "babel": "babel lib/ -d src/"
   },
   "repository": {
