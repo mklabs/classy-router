@@ -6,6 +6,9 @@ Lightweight, has only [debug](https://www.npmjs.com/package/debug) and
 [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) dependencies.
 It is compatible with **Express 4**, **Hapi** or **simple HTTP server**.
 
+This module is a follow-up of [ES6 Class based Express
+routing](http://mkla.bz/2016/04/20/es6-class-express-routing.html) blog post.
+
 ## Installation
 
     npm install classy-router -S
