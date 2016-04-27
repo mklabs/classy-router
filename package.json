@@ -1,6 +1,6 @@
 {
   "name": "classy-router",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Class based HTTP routing",
   "main": "src",
   "author": "mklabs",
