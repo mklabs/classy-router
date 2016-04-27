@@ -2,11 +2,12 @@
 
 > Class based HTTP router
 
+Compatible with **Express 4**, **Hapi** or **simple HTTP server**.
+
 Lightweight, has only [debug](https://www.npmjs.com/package/debug) and
 [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) dependencies.
-It is compatible with **Express 4**, **Hapi** or **simple HTTP server**.
 
-This module is a follow-up of [ES6 Class based Express
+This module is a follow-up to [ES6 Class based Express
 routing](http://mkla.bz/2016/04/20/es6-class-express-routing.html) blog post.
 
 ## Installation
@@ -85,7 +86,6 @@ Router.listen(3000);
    - [Router](#router)
      - [API](#router-api)
      - [HTTP response](#router-http-response)
-<a name=""></a>
 
 <a name="router"></a>
 ### Router
