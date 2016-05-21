@@ -1,4 +1,4 @@
-# classy-router [![Build Status](https://secure.travis-ci.org/mklabs/classy-router.png)](http://travis-ci.org/mklabs/classy-router)
+# tilt-router [![Build Status](https://secure.travis-ci.org/mklabs/tilt-router.png)](http://travis-ci.org/mklabs/tilt-router)
 
 > Class based HTTP router
 
@@ -12,7 +12,7 @@ routing](http://mkla.bz/2016/04/20/es6-class-express-routing.html) blog post.
 
 ## Installation
 
-    npm install classy-router -S
+    npm install mklabs/tilt-router -S
 
 ## Usage
 
@@ -24,9 +24,9 @@ framework, Express or Hapi.
 Additionnaly, it implements a simple routing mechanism with raw HTTP server.
 
 ```js
-import ClassyRouter from 'classy-router'
+import TiltRouter from 'tilt-router'
 
-class Router extends ClassyRouter {
+class Router extends TiltRouter {
   get routes() {
     '/': 'index'
   }
