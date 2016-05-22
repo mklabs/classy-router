@@ -2,7 +2,7 @@
   "name": "tilt-router",
   "version": "0.0.3",
   "description": "Class based HTTP routing",
-  "main": "src",
+  "main": "lib",
   "author": "mklabs",
   "license": "MIT",
   "homepage": "https://github.com/mklabs/tilt-router#readme",
