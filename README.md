@@ -40,7 +40,6 @@ class Router extends TiltRouter {
 
 ### Express
 
-
 ```js
 var app = require('express')();
 var router = new Router(app);
