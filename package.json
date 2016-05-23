@@ -8,7 +8,8 @@
   "homepage": "https://github.com/mklabs/tilt-router#readme",
   "scripts": {
     "test": "npm run babel && babel-node ./node_modules/.bin/mocha test",
-    "babel": "babel lib/ -d src/"
+    "babel": "babel lib/ -d src/",
+    "release": "standard-version -m '%s' && git push origin master --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "express": "^4.13.4",
     "hapi": "^13.4.1",
     "mocha": "^2.4.5",
+    "standard-version": "^2.2.1",
     "supertest": "^1.2.0"
   }
 }
