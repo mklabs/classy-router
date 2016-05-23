@@ -12,7 +12,7 @@ routing](http://mkla.bz/2016/04/20/es6-class-express-routing.html) blog post.
 
 ## Installation
 
-    npm install mklabs/tilt-router -S
+    npm install tilt-router -S
 
 ## Usage
 
