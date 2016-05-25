@@ -8,17 +8,23 @@ const request = require('supertest');
 const PORT = process.env.PORT || 0;
 
 describe('Router', () => {
-
   it('class TestApp extends Router', () => {
     class TestApp extends Router {
       get routes() {
         return {
-          '/': 'index'
+          '/':      'index',
+          '/async': 'async'
         };
       }
 
-      index(req, res, next) {
-        return res.end('OK');
+      index(ctx) {
+        return 'OK';
+      }
+
+      async(ctx) {
+        return new Promise((r, errback) => {
+          setTimeout(() => { r('Async action') }, 500);
+        });
       }
     }
 
@@ -31,12 +37,19 @@ describe('Router', () => {
       class App extends Router {
         get routes() {
           return {
-            '/': 'index'
+            '/': 'index',
+            '/async': 'async'
           };
         }
 
         index(req, res, next) {
-          return res.end('OK');
+          return 'OK';
+        }
+
+        async(ctx) {
+          return new Promise((r, errback) => {
+            setTimeout(() => { r('Async action') }, 500);
+          });
         }
       }
 

@@ -30,8 +30,8 @@ describe('Express', () => {
         };
       }
 
-      index(req, res, next) {
-        return res.end('OK');
+      index(ctx, res) {
+        return 'OK';
       }
     }
 

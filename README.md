@@ -2,7 +2,7 @@
 
 > Class based HTTP router
 
-Compatible with **Express 4**, **Hapi** or **simple HTTP server**.
+Compatible with **Express 4** or **simple HTTP server**.
 
 Lightweight, has only [debug](https://www.npmjs.com/package/debug) and
 [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) dependencies.
