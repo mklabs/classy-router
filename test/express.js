@@ -1,14 +1,10 @@
 'use strict';
 
-const http    = require('http');
 const Router  = require('..');
 const assert  = require('assert');
 const request = require('supertest');
 
-const PORT = process.env.PORT || 0;
-
 describe('Express', () => {
-
   it('Router.dispatch() - express middleware', (done) => {
     var app = require('express')();
     var middleware = Router.middleware(app);
@@ -24,13 +20,13 @@ describe('Express', () => {
 
   describe('HTTP response', () => {
     class App extends Router {
-      get routes() {
+      get routes () {
         return {
           '/': 'index'
         };
       }
 
-      index(ctx, res) {
+      index (ctx, res) {
         return 'OK';
       }
     }
@@ -53,6 +49,4 @@ describe('Express', () => {
         .expect(404, done);
     });
   });
-
-
 });

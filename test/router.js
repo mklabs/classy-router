@@ -1,29 +1,26 @@
 'use strict';
 
-const http    = require('http');
 const Router  = require('..');
 const assert  = require('assert');
 const request = require('supertest');
 
-const PORT = process.env.PORT || 0;
-
 describe('Router', () => {
   it('class TestApp extends Router', () => {
     class TestApp extends Router {
-      get routes() {
+      get routes () {
         return {
-          '/':      'index',
+          '/': 'index',
           '/async': 'async'
         };
       }
 
-      index(ctx) {
+      index (ctx) {
         return 'OK';
       }
 
-      async(ctx) {
+      async (ctx) {
         return new Promise((r, errback) => {
-          setTimeout(() => { r('Async action') }, 500);
+          setTimeout(() => { r('Async action'); }, 500);
         });
       }
     }
@@ -35,20 +32,20 @@ describe('Router', () => {
   describe('HTTP response', () => {
     beforeEach(() => {
       class App extends Router {
-        get routes() {
+        get routes () {
           return {
             '/': 'index',
             '/async': 'async'
           };
         }
 
-        index(req, res, next) {
+        index (req, res, next) {
           return 'OK';
         }
 
-        async(ctx) {
+        async (ctx) {
           return new Promise((r, errback) => {
-            setTimeout(() => { r('Async action') }, 500);
+            setTimeout(() => { r('Async action'); }, 500);
           });
         }
       }
@@ -70,6 +67,4 @@ describe('Router', () => {
         .expect(404, done);
     });
   });
-
-
 });

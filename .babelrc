@@ -4,7 +4,6 @@
   ],
   "plugins": [
     "add-module-exports",
-    "transform-async-to-generator",
     "syntax-async-functions",
     "transform-regenerator"
   ]
