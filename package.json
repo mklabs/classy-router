@@ -1,12 +1,16 @@
 {
-  "name": "tilt-router",
-  "version": "0.0.4",
-  "description": "Class based HTTP routing",
-  "main": "src",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "browser": "opn http://localhost:3000; list test/",
+    "test-chrome": "opn http://localhost:3000 -- google-chrome; npm run browser",
+    "test-firefox": "opn http://localhost:3000 -- firefox; npm run browser"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^9.2.0",
+    "mocha": "^2.4.5",
+    "micro-list": "^0.4.1",
+    "opn-cli": "^3.1.0",
     "babel-cli": "^6.9.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-syntax-async-functions": "^6.8.0",
@@ -17,11 +21,14 @@
     "eslint-plugin-promise": "^1.1.0",
     "eslint-plugin-standard": "^1.3.2",
     "express": "^4.13.4",
-    "mocha": "^2.4.5",
     "standard-version": "^2.2.1",
     "supertest": "^1.2.0",
     "watchd": "github:mklabs/watchd"
   },
+  "name": "tilt-router",
+  "version": "0.0.4",
+  "description": "Class based HTTP routing",
+  "main": "src",
   "author": "mklabs",
   "license": "MIT",
   "homepage": "https://github.com/mklabs/tilt-router#readme",
